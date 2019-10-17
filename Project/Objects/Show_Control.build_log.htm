@@ -1,0 +1,109 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: liu admin, pd, LIC=AK156-DB45Z-IMS9B-2VT0Y-EABN3-27DM9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.26.2.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.31.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\CODE\lxs\STM10x_sx12xx V0.0\Project\STM10x_sx12xx.uvprojx
+Project File Date:  10/16/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling sx1276-Hal.c...
+..\DRIVERS\SX12xxDrivers\src\platform\sx12xxEiger\sx1276-Hal.c(32): warning:  #177-D: variable "GPIO_InitStructure"  was declared but never referenced
+      GPIO_InitTypeDef GPIO_InitStructure;
+..\DRIVERS\SX12xxDrivers\src\platform\sx12xxEiger\sx1276-Hal.c: 1 warning, 0 errors
+compiling sx12xxEiger.c...
+compiling main.c...
+..\User\main.c(59): warning:  #111-D: statement is unreachable
+  	return 1;
+..\User\main.c(131): warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t i;
+..\User\main.c(16): warning:  #177-D: variable "EnableMaster"  was declared but never referenced
+  static uint8_t EnableMaster = true; 					// Master/Slave selection
+..\User\main.c: 3 warnings, 0 errors
+compiling sx1276-LoRa.c...
+compiling sx1276-LoRaMisc.c...
+compiling sx1276.c...
+compiling ioe.c...
+compiling sx1276-Fsk.c...
+compiling sx1276-FskMisc.c...
+linking...
+Program Size: Code=36396 RO-data=3836 RW-data=568 ZI-data=12544  
+FromELF: creating hex file...
+After Build - User command #1: D:\Keil_v5\ARM\ARMCC\bin\fromelf.exe  --bin -o Show_Control.bin ./Objects/Show_Control.axf
+".\Objects\Show_Control.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: rt-thread
+                http://www.rt-thread.org/download/mdk/rt-thread.rtthread.3.0.3.pack
+                rt-thread.rtthread.3.0.3
+                RT-Thread Software Components
+   * Component: device drivers Version: 3.0.3
+   * Component: kernel Version: 3.0.3
+   * Component: shell Version: 3.0.3
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\RTOS
+  .\RTE\_Target_1
+  D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+  D:\Keil_v5\ARM\PACK\rt-thread\rtthread\3.0.3\components\finsh
+  D:\Keil_v5\ARM\PACK\rt-thread\rtthread\3.0.3\include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: rt-thread.RT-Thread::RTOS:device drivers:3.0.3
+
+   * Component: rt-thread.RT-Thread::RTOS:kernel:3.0.3
+      Include file:  bsp\rtconfig.h
+      Source file:   src\components.c
+      Source file:   src\mem.c
+      Source file:   src\thread.c
+      Source file:   src\timer.c
+      Source file:   src\idle.c
+      Source file:   src\object.c
+      Source file:   src\irq.c
+      Source file:   src\scheduler.c
+      Source file:   src\device.c
+      Source file:   src\clock.c
+      Source file:   src\ipc.c
+      Source file:   src\kservice.c
+      Source file:   bsp\board.c
+      Source file:   libcpu\arm\cortex-m3\cpuport.c
+      Source file:   libcpu\arm\cortex-m3\context_rvds.S
+
+   * Component: rt-thread.RT-Thread::RTOS:shell:3.0.3
+      Source file:   components\finsh\cmd.c
+      Source file:   components\finsh\msh_file.c
+      Source file:   components\finsh\shell.c
+      Source file:   components\finsh\symbol.c
+      Source file:   components\finsh\msh_cmd.c
+      Source file:   components\finsh\msh.c
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
